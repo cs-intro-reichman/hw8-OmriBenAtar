@@ -43,7 +43,7 @@
 
     /** If this user follows the given name, returns true; otherwise returns false. */
     public boolean follows(String name) {
-        for (int i = 0; i < fCount; i++) {
+        for (int i = 0; i < fCount+1; i++) {
             if (follows[i].equals(name)) {
                 return true;
             }

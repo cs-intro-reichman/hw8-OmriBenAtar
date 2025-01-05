@@ -62,7 +62,7 @@ public class Network {
         //// Replace the following statement with your code
         User user1 = getUser(name1);
         User user2 = getUser(name2);
-        if (user1 == null || user2 == null) {
+        if (user1 == null || user2 == null || name1.toLowerCase().equals(name2.toLowerCase())) {
             return false;
         }
         return user1.addFollowee(name2);
@@ -133,7 +133,7 @@ public class Network {
        System.out.println("Network: ");
        for (int i = 0; i < userCount; i++) {
             System.out.println(users[i]);
-            description += users[i] + "\n";
+            description += users[i];
         }
         return description;
     }

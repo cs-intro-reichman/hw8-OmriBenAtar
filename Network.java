@@ -77,7 +77,7 @@ public class Network {
         String recommended = null;
         for (int i = 0; i < userCount; i++) {
             User currentUser = users[i];
-            if (currentUser.getName() == name || user.isFriendOf(currentUser)) {
+            if (currentUser.getName().equals(name) || user.isFriendOf(currentUser)) {
                 continue;
             }
             int mutual = user.countMutual(currentUser);

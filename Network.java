@@ -133,7 +133,7 @@ public class Network {
        System.out.println("Network: ");
        for (int i = 0; i < userCount; i++) {
             System.out.println(users[i]);
-            description += users[i];
+            description += users[i] + "\n";
         }
         return description;
     }
